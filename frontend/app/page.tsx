@@ -44,7 +44,7 @@ export default function Home() {
   } = await supabase.auth.getSession();
 
   const response = await fetch(
-    "http://127.0.0.1:5000/api/tasks",
+  "https://hairdrama-task-management.onrender.com/api/tasks",
     {
       headers: {
         Authorization: `Bearer ${session?.access_token}`,
@@ -64,8 +64,8 @@ export default function Home() {
     data: { session },
   } = await supabase.auth.getSession();
 
-  const response = await fetch(
-    "http://127.0.0.1:5000/api/users",
+ const response = await fetch(
+  "https://hairdrama-task-management.onrender.com/api/users",
     {
       headers: {
         Authorization: `Bearer ${session?.access_token}`,
