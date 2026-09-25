@@ -96,7 +96,7 @@ export default function Home() {
 
     const accessToken = session?.access_token;
     
-    const response = await fetch("http://127.0.0.1:5000/api/tasks", {
+    const response = await fetch("https://hairdrama-task-management.onrender.com/api/tasks", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
